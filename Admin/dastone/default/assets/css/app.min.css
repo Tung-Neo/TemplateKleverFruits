@@ -34,3 +34,66 @@
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
+
+.container-switch {
+  /* width: 100px; */
+  margin: auto;
+  text-align: center;
+}
+.switch-switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+  /* margin-top: 13px; */
+}
+
+.switch-switch input {display:none;}
+
+.slider-switch {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider-switch:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 4px;
+  top: 1px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider-switch {
+  background-color: #12A4ED;
+}
+
+input:focus + .slider-switch {
+  box-shadow: 0 0 1px #12A4ED;
+}
+
+input:checked + .slider-switch:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider-switch.round-switch {
+  border-radius: 17px;
+}
+
+.slider-switch.round-switch:before {
+  border-radius: 50%;
+}

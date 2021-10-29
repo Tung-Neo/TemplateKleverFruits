@@ -1,36 +1,4 @@
 var
-// options={
-//   chart:{
-//     height:320,
-//     type:"area",
-//     stacked:!1,
-//     toolbar:{show:!1,autoSelected:"zoom"}},
-//     colors:["#2a77f4","#a5c2f1"],
-//     dataLabels:{enabled:!1},
-//     stroke:{curve:"smooth",
-//     width:[1.5, 1.5],
-//     dashArray:[0,4],
-//     lineCap:"round"},
-//     grid:{padding:{left:0,right:0},
-//     strokeDashArray:3},
-//     markers:{size:0,hover:{size:0}},
-//     series:[
-//       {name:"Tuần Này",data:[634,200,939,458,1184,570,1340]},
-//       {name:"Tuần Trước",data:[456,170,712,368,493,448,950]}],
-//       xaxis:{type:"day",categories:["Thứ 2","Thứ 3","Thứ 4","Thứ 5","Thứ 6","Thứ 7","Chủ Nhật"],
-//       axisBorder:{
-//         show:!0},
-//         axisTicks:{show:!0}},
-//         fill:{
-//           type:"gradient",
-//           gradient:{
-//             shadeIntensity:1,
-//             opacityFrom:.4,
-//             opacityTo:.3,
-//             stops:[0,90,100]}},
-//             tooltip:{x:{format:"dd/MM/yy HH:mm"}},legend:{position:"top",horizontalAlign:"right"}};
-// (chart=new ApexCharts(document.querySelector("#ana_dash_1"),options)).render();
-
 options={
   series:[{data:[641,465,521,420,682,660,930]}],
   chart:{height:350,type:"line",zoom:{enabled:!1}},
@@ -85,17 +53,6 @@ options={
       axisBorder:{show:!0,color:"#20016c"},
       labels:{style:{color:"#20016c"}},
       title:{text:"Số Đơn Hàng"}},
-    // {
-    //   axisTicks:{show:!0},
-    //   axisBorder:{show:!0,color:"#77d0ba"},
-    //   labels:{style:{color:"#77d0ba"},offsetX:10},
-    //   title:{text:"Operating Cashflow (thousand crores)"}},
-    // {
-    //   opposite:!0,
-    //   axisTicks:{show:!0},
-    //   axisBorder:{show:!0,color:"#fa5c7c"},
-    //   labels:{style:{color:"#fa5c7c"}},
-    //   title:{text:"Revenue (thousand crores)"}}
     ],
   tooltip:{
     followCursor:!0,
@@ -115,3 +72,5 @@ options={
       e+=864e5,o++}
       return r}
       (chart=new ApexCharts(document.querySelector("#apex_mixed"),options)).render();
+
+!function(t){"use strict";var e=function(){};e.prototype.init=function(){t("#sa-warning").click(function(){swal.fire({title:"Bạn chắc chắn muốn xóa?",type:"warning",showCancelButton:!0,confirmButtonText:"Đồng ý xóa!",cancelButtonText:"Hủy bỏ!",reverseButtons:!0}).then(function(t){t.value?swal.fire("Deleted!","Bạn đã xóa thành công.","success"):t.dismiss===Swal.DismissReason.cancel&&swal.fire("Cancelled","Đã hủy","error")})})},t.SweetAlert=new e,t.SweetAlert.Constructor=e}(window.jQuery),function(t){"use strict";window.jQuery.SweetAlert.init()}();
