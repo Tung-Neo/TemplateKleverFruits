@@ -1,0 +1,599 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from mannatthemes.com/dastone/default/apps-ecommerce-product-list.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 Oct 2021 09:19:48 GMT -->
+<head>
+        <meta charset="utf-8" />
+        <title>Admin - Klever Fruits</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+        <meta content="" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- DataTables -->
+        <link href="../plugins/datatables/dataTables.bootstrap5.min.css" rel="stylesheet" type="text/css" />
+        <link href="../plugins/datatables/buttons.bootstrap5.min.css" rel="stylesheet" type="text/css" />
+
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/metisMenu.min.css" rel="stylesheet" type="text/css" />
+        <link href="../plugins/daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body>
+        <!-- Left Sidenav -->
+        <div class="left-sidenav">
+            <!-- LOGO -->
+            <div class="brand">
+                <a href="index.html" class="logo">
+                    <span>
+                        <img src="assets/images/logo-sm.png" alt="logo-small" class="logo-sm">
+                    </span>
+                    <span>
+                        <img src="assets/images/logo.png" alt="logo-large" class="logo-lg logo-light" style="height: 40px;">
+                        <img src="assets/images/logo-dark.png" alt="logo-large" class="logo-lg logo-dark" style="height: 40px;">
+                    </span>
+                </a>
+            </div>
+            <!--end logo-->
+            <div class="menu-content h-100" data-simplebar>
+                <ul class="metismenu left-sidenav-menu">
+                    <li class="menu-label mt-0">
+                      <h5>Main</h5>
+                    </li>
+                    <li>
+                        <a href="index.html"> <i data-feather="home" class="align-self-center menu-icon"></i><span>Thống Kê</span></a>
+                    </li>
+                    <li>
+                        <a href="apps-ecommerce-account-list.html"> <i data-feather="user" class="align-self-center menu-icon"></i><span>Tài Khoản</span></a>
+                    </li>
+                    <li>
+                        <a href="apps-ecommerce-product-list.html"> <i data-feather="clipboard" class="align-self-center menu-icon"></i><span>Sản Phẩm</span></a>
+                    </li>
+                    <li>
+                        <a href="apps-ecommerce-order-list.html"> <i data-feather="shopping-cart" class="align-self-center menu-icon"></i><span>Đơn Hàng</span></a>
+                    </li>
+                    <li>
+                        <a href="apps-email-inbox.html"> <i data-feather="mail" class="align-self-center menu-icon"></i><span>Liên Hệ</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- end left-sidenav-->
+
+
+        <div class="page-wrapper">
+            <!-- Top Bar Start -->
+            <div class="topbar">
+                <!-- Navbar -->
+                <nav class="navbar-custom">
+                    <ul class="list-unstyled topbar-nav float-end mb-0">
+                        <li class="dropdown hide-phone">
+                            <a class="nav-link dropdown-toggle arrow-none waves-light waves-effect" data-bs-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="false" aria-expanded="false">
+                                <i data-feather="search" class="topbar-icon"></i>
+                            </a>
+
+                            <div class="dropdown-menu dropdown-menu-end dropdown-lg p-0">
+                                <!-- Top Search Bar -->
+                                <div class="app-search-topbar">
+                                    <form action="#" method="get">
+                                        <input type="search" name="search" class="from-control top-search mb-0" placeholder="Nhập từ khóa...">
+                                        <button type="submit"><i class="ti-search"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle arrow-none waves-light waves-effect" data-bs-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="false" aria-expanded="false">
+                                <i data-feather="bell" class="align-self-center topbar-icon"></i>
+                                <span class="badge bg-danger rounded-pill noti-icon-badge">1</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end dropdown-lg pt-0" style="width: 400px;">
+
+                                <h6 class="dropdown-item-text font-15 m-0 py-3 border-bottom d-flex justify-content-between align-items-center">
+                                    Thông Báo
+                                </h6>
+                                <div class="notification-menu" data-simplebar>
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item py-3">
+                                        <small class="float-end text-muted ps-2">
+                                          Ngay Bây Giờ
+                                          <div class="new-notification"></div>
+                                        </small>
+                                        <div class="media">
+                                            <div class="avatar-md bg-soft-primary">
+                                                <i data-feather="alert-circle" class="align-self-center icon-xs"></i>
+                                            </div>
+                                            <div class="media-body align-self-center ms-2 text-truncate">
+                                                <h6 class="my-0 fw-normal text-dark">Đang chờ xử lí...</h6>
+                                                <small class="text-muted mb-0">Bạn có 1 đơn hàng mới</small>
+                                            </div><!--end media-body-->
+                                        </div><!--end media-->
+                                    </a><!--end-item-->
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item py-3">
+                                        <small class="float-end text-muted ps-2">20 phút trước</small>
+                                        <div class="media">
+                                            <div class="avatar-md bg-soft-primary">
+                                                <i data-feather="check-circle" class="align-self-center icon-xs"></i>
+                                            </div>
+                                            <div class="media-body align-self-center ms-2 text-truncate">
+                                                <h6 class="my-0 fw-normal text-dark">Đặt hàng thành công</h6>
+                                                <small class="text-muted mb-0">Đơn đặt hàng đã được xác nhận.</small>
+                                            </div><!--end media-body-->
+                                        </div><!--end media-->
+                                    </a><!--end-item-->
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item py-3">
+                                        <small class="float-end text-muted ps-2">22 phút trước</small>
+                                        <div class="media">
+                                            <div class="avatar-md bg-soft-primary">
+                                                <i data-feather="check-circle" class="align-self-center icon-xs"></i>
+                                            </div>
+                                            <div class="media-body align-self-center ms-2 text-truncate">
+                                                <h6 class="my-0 fw-normal text-dark">Đặt hàng đã hủy</h6>
+                                                <small class="text-muted mb-0">Đơn đặt hàng đã hủy thành công.</small>
+                                            </div><!--end media-body-->
+                                        </div><!--end media-->
+                                    </a><!--end-item-->
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item py-3">
+                                        <small class="float-end text-muted ps-2">1 giờ trước</small>
+                                        <div class="media">
+                                            <div class="avatar-md bg-soft-primary">
+                                                <i data-feather="mail" class="align-self-center icon-xs"></i>
+                                            </div>
+                                            <div class="media-body align-self-center ms-2 text-truncate">
+                                                <h6 class="my-0 fw-normal text-dark">Liên hệ</h6>
+                                                <small class="text-muted mb-0">Bạn có 1 tin nhắn mới.</small>
+                                            </div><!--end media-body-->
+                                        </div><!--end media-->
+                                    </a><!--end-item-->
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item py-3">
+                                        <small class="float-end text-muted ps-2">1 ngày trước</small>
+                                        <div class="media">
+                                            <div class="avatar-md bg-soft-primary">
+                                                <i data-feather="check-circle" class="align-self-center icon-xs"></i>
+                                            </div>
+                                            <div class="media-body align-self-center ms-2 text-truncate">
+                                                <h6 class="my-0 fw-normal text-dark">Đặt hàng giao</h6>
+                                                <small class="text-muted mb-0">Đơn đặt hàng đã được giao thành công.</small>
+                                            </div><!--end media-body-->
+                                        </div><!--end media-->
+                                    </a><!--end-item-->
+                                    <!-- item-->
+                                </div>
+                                <!-- All-->
+                                <!-- <a href="javascript:void(0);" class="dropdown-item text-center text-primary">
+                                    View all <i class="fi-arrow-right"></i>
+                                </a> -->
+                            </div>
+                        </li>
+
+                        <li class="dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-bs-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="false" aria-expanded="false">
+                                <span class="ms-1 nav-user-name hidden-sm">Admin</span>
+                                <img data-feather="user" class="rounded-circle thumb-xs" style="border: 1px solid" />
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <a class="dropdown-item" href="#"><i data-feather="key" class="align-self-center icon-xs icon-dual me-1"></i> Đổi mật khẩu</a>
+                                <!-- <a class="dropdown-item" href="#"><i data-feather="settings" class="align-self-center icon-xs icon-dual me-1"></i> Settings</a> -->
+                                <div class="dropdown-divider mb-0"></div>
+                                <a class="dropdown-item" href="#"><i data-feather="power" class="align-self-center icon-xs icon-dual me-1"></i> Đăng xuất</a>
+                            </div>
+                        </li>
+                    </ul><!--end topbar-nav-->
+
+                    <ul class="list-unstyled topbar-nav mb-0">
+                        <li>
+                            <button class="nav-link button-menu-mobile">
+                                <i data-feather="menu" class="align-self-center topbar-icon"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- end navbar-->
+            </div>
+            <!-- Top Bar End -->
+
+            <!-- Page Content-->
+            <div class="page-content">
+                <div class="container-fluid">
+                    <!-- Page-Title -->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="page-title-box">
+                                <div class="row">
+                                    <div class="col">
+                                        <h4 class="page-title">Sản Phẩm</h4>
+                                    </div><!--end col-->
+                                    <div class="col-auto align-self-center">
+                                        <div href="#" class="btn btn-sm btn-outline-primary" id="Dash_Date">
+                                            <span class="ay-name" id="Day_Name">Today:</span>&nbsp;
+                                            <span class="" id="Select_date">Jan 11</span>
+                                            <i data-feather="calendar" class="align-self-center icon-xs ms-1"></i>
+                                        </div>
+                                    </div><!--end col-->
+                                </div><!--end row-->
+                            </div><!--end page-title-box-->
+                        </div><!--end col-->
+                    </div><!--end row-->
+                    <!-- end page title end breadcrumb -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="table-responsive">
+                                <table id="datatable" class="table table-bordered">
+                                    <thead>
+                                    <tr>
+                                        <th>Tên Sản Phẩm</th>
+                                        <th>Mã Sản Phẩm</th>
+                                        <th>Phân Loại</th>
+                                        <th>Xuất Xứ</th>
+                                        <th>Giá (VND)</th>
+                                        <th>Đơn Vị</th>
+                                        <th>Số Lượng Nhập</th>
+                                        <th>Tồn Kho</th>
+                                        <th>Ngày Nhập</th>
+                                        <th>Hạn Sử Dụng</th>
+                                        <th>Khuyến Mại %</th>
+                                        <th>Trạng Thái</th>
+                                        <th>Tùy Chọn</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="assets/images/products/american/cherry.png" alt="" height="40">
+                                            <p class="d-inline-block align-middle mb-0">
+                                                <a href="#" class="d-inline-block align-middle mb-0 product-name">Cherry</a>
+                                            </p>
+                                        </td>
+                                        <td>c18340</td>
+                                        <td>Cherry</td>
+                                        <td>Nước Mỹ</td>
+                                        <td>1.200.000</td>
+                                        <td>Kg</td>
+                                        <td>50</td>
+                                        <td>20</td>
+                                        <td>20/10/2021</td>
+                                        <td>30/10/2021</td>
+                                        <td>0</td>
+                                        <td><span class="badge badge-soft-warning">Sắp Hết Hàng</span></td>
+                                        <td>
+                                            <a href="#"><i class="las la-pen text-secondary font-16"></i></a>
+                                            <a href="#"><i class="las la-trash-alt text-secondary font-16"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="assets/images/products/american/cherry.png" alt="" height="40">
+                                            <p class="d-inline-block align-middle mb-0">
+                                                <a href="#" class="d-inline-block align-middle mb-0 product-name">Cherry</a>
+                                            </p>
+                                        </td>
+                                        <td>c18340</td>
+                                        <td>Cherry</td>
+                                        <td>Nước Mỹ</td>
+                                        <td>1.200.000</td>
+                                        <td>Kg</td>
+                                        <td>50</td>
+                                        <td>20</td>
+                                        <td>20/10/2021</td>
+                                        <td>30/10/2021</td>
+                                        <td>0</td>
+                                        <td><span class="badge badge-soft-warning">Sắp Hết Hàng</span></td>
+                                        <td>
+                                            <a href="#"><i class="las la-pen text-secondary font-16"></i></a>
+                                            <a href="#"><i class="las la-trash-alt text-secondary font-16"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="assets/images/products/american/cherry.png" alt="" height="40">
+                                            <p class="d-inline-block align-middle mb-0">
+                                                <a href="#" class="d-inline-block align-middle mb-0 product-name">Cherry</a>
+                                            </p>
+                                        </td>
+                                        <td>c18340</td>
+                                        <td>Cherry</td>
+                                        <td>Nước Mỹ</td>
+                                        <td>1.200.000</td>
+                                        <td>Kg</td>
+                                        <td>50</td>
+                                        <td>20</td>
+                                        <td>20/10/2021</td>
+                                        <td>30/10/2021</td>
+                                        <td>0</td>
+                                        <td><span class="badge badge-soft-warning">Sắp Hết Hàng</span></td>
+                                        <td>
+                                            <a href="#"><i class="las la-pen text-secondary font-16"></i></a>
+                                            <a href="#"><i class="las la-trash-alt text-secondary font-16"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="assets/images/products/american/cherry.png" alt="" height="40">
+                                            <p class="d-inline-block align-middle mb-0">
+                                                <a href="#" class="d-inline-block align-middle mb-0 product-name">Cherry</a>
+                                            </p>
+                                        </td>
+                                        <td>c18340</td>
+                                        <td>Cherry</td>
+                                        <td>Nước Mỹ</td>
+                                        <td>1.200.000</td>
+                                        <td>Kg</td>
+                                        <td>50</td>
+                                        <td>20</td>
+                                        <td>20/10/2021</td>
+                                        <td>30/10/2021</td>
+                                        <td>0</td>
+                                        <td><span class="badge badge-soft-warning">Sắp Hết Hàng</span></td>
+                                        <td>
+                                            <a href="#"><i class="las la-pen text-secondary font-16"></i></a>
+                                            <a href="#"><i class="las la-trash-alt text-secondary font-16"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="assets/images/products/american/cherry.png" alt="" height="40">
+                                            <p class="d-inline-block align-middle mb-0">
+                                                <a href="#" class="d-inline-block align-middle mb-0 product-name">Cherry</a>
+                                            </p>
+                                        </td>
+                                        <td>c18340</td>
+                                        <td>Cherry</td>
+                                        <td>Nước Mỹ</td>
+                                        <td>1.200.000</td>
+                                        <td>Kg</td>
+                                        <td>50</td>
+                                        <td>20</td>
+                                        <td>20/10/2021</td>
+                                        <td>30/10/2021</td>
+                                        <td>0</td>
+                                        <td><span class="badge badge-soft-warning">Sắp Hết Hàng</span></td>
+                                        <td>
+                                            <a href="#"><i class="las la-pen text-secondary font-16"></i></a>
+                                            <a href="#"><i class="las la-trash-alt text-secondary font-16"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="assets/images/products/american/cherry.png" alt="" height="40">
+                                            <p class="d-inline-block align-middle mb-0">
+                                                <a href="#" class="d-inline-block align-middle mb-0 product-name">Cherry</a>
+                                            </p>
+                                        </td>
+                                        <td>c18340</td>
+                                        <td>Cherry</td>
+                                        <td>Nước Mỹ</td>
+                                        <td>1.200.000</td>
+                                        <td>Kg</td>
+                                        <td>50</td>
+                                        <td>20</td>
+                                        <td>20/10/2021</td>
+                                        <td>30/10/2021</td>
+                                        <td>0</td>
+                                        <td><span class="badge badge-soft-warning">Sắp Hết Hàng</span></td>
+                                        <td>
+                                            <a href="#"><i class="las la-pen text-secondary font-16"></i></a>
+                                            <a href="#"><i class="las la-trash-alt text-secondary font-16"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="assets/images/products/american/cherry.png" alt="" height="40">
+                                            <p class="d-inline-block align-middle mb-0">
+                                                <a href="#" class="d-inline-block align-middle mb-0 product-name">Cherry</a>
+                                            </p>
+                                        </td>
+                                        <td>c18340</td>
+                                        <td>Cherry</td>
+                                        <td>Nước Mỹ</td>
+                                        <td>1.200.000</td>
+                                        <td>Kg</td>
+                                        <td>50</td>
+                                        <td>20</td>
+                                        <td>20/10/2021</td>
+                                        <td>30/10/2021</td>
+                                        <td>0</td>
+                                        <td><span class="badge badge-soft-warning">Sắp Hết Hàng</span></td>
+                                        <td>
+                                            <a href="#"><i class="las la-pen text-secondary font-16"></i></a>
+                                            <a href="#"><i class="las la-trash-alt text-secondary font-16"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="assets/images/products/american/cherry.png" alt="" height="40">
+                                            <p class="d-inline-block align-middle mb-0">
+                                                <a href="#" class="d-inline-block align-middle mb-0 product-name">Cherry</a>
+                                            </p>
+                                        </td>
+                                        <td>c18340</td>
+                                        <td>Cherry</td>
+                                        <td>Nước Mỹ</td>
+                                        <td>1.200.000</td>
+                                        <td>Kg</td>
+                                        <td>50</td>
+                                        <td>20</td>
+                                        <td>20/10/2021</td>
+                                        <td>30/10/2021</td>
+                                        <td>0</td>
+                                        <td><span class="badge badge-soft-warning">Sắp Hết Hàng</span></td>
+                                        <td>
+                                            <a href="#"><i class="las la-pen text-secondary font-16"></i></a>
+                                            <a href="#"><i class="las la-trash-alt text-secondary font-16"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="assets/images/products/american/cherry.png" alt="" height="40">
+                                            <p class="d-inline-block align-middle mb-0">
+                                                <a href="#" class="d-inline-block align-middle mb-0 product-name">Cherry</a>
+                                            </p>
+                                        </td>
+                                        <td>c18340</td>
+                                        <td>Cherry</td>
+                                        <td>Nước Mỹ</td>
+                                        <td>1.200.000</td>
+                                        <td>Kg</td>
+                                        <td>50</td>
+                                        <td>20</td>
+                                        <td>20/10/2021</td>
+                                        <td>30/10/2021</td>
+                                        <td>0</td>
+                                        <td><span class="badge badge-soft-warning">Sắp Hết Hàng</span></td>
+                                        <td>
+                                            <a href="#"><i class="las la-pen text-secondary font-16"></i></a>
+                                            <a href="#"><i class="las la-trash-alt text-secondary font-16"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="assets/images/products/american/cherry.png" alt="" height="40">
+                                            <p class="d-inline-block align-middle mb-0">
+                                                <a href="#" class="d-inline-block align-middle mb-0 product-name">Cherry</a>
+                                            </p>
+                                        </td>
+                                        <td>c18340</td>
+                                        <td>Cherry</td>
+                                        <td>Nước Mỹ</td>
+                                        <td>1.200.000</td>
+                                        <td>Kg</td>
+                                        <td>50</td>
+                                        <td>20</td>
+                                        <td>20/10/2021</td>
+                                        <td>30/10/2021</td>
+                                        <td>0</td>
+                                        <td><span class="badge badge-soft-warning">Sắp Hết Hàng</span></td>
+                                        <td>
+                                            <a href="#"><i class="las la-pen text-secondary font-16"></i></a>
+                                            <a href="#"><i class="las la-trash-alt text-secondary font-16"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="assets/images/products/american/cherry.png" alt="" height="40">
+                                            <p class="d-inline-block align-middle mb-0">
+                                                <a href="#" class="d-inline-block align-middle mb-0 product-name">Cherry</a>
+                                            </p>
+                                        </td>
+                                        <td>c18340</td>
+                                        <td>Cherry</td>
+                                        <td>Nước Mỹ</td>
+                                        <td>1.200.000</td>
+                                        <td>Kg</td>
+                                        <td>50</td>
+                                        <td>20</td>
+                                        <td>20/10/2021</td>
+                                        <td>30/10/2021</td>
+                                        <td>0</td>
+                                        <td><span class="badge badge-soft-warning">Sắp Hết Hàng</span></td>
+                                        <td>
+                                            <a href="#"><i class="las la-pen text-secondary font-16"></i></a>
+                                            <a href="#"><i class="las la-trash-alt text-secondary font-16"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="assets/images/products/american/cherry.png" alt="" height="40">
+                                            <p class="d-inline-block align-middle mb-0">
+                                                <a href="#" class="d-inline-block align-middle mb-0 product-name">Cherry</a>
+                                            </p>
+                                        </td>
+                                        <td>c18340</td>
+                                        <td>Cherry</td>
+                                        <td>Nước Mỹ</td>
+                                        <td>1.200.000</td>
+                                        <td>Kg</td>
+                                        <td>50</td>
+                                        <td>20</td>
+                                        <td>20/10/2021</td>
+                                        <td>30/10/2021</td>
+                                        <td>0</td>
+                                        <td><span class="badge badge-soft-warning">Sắp Hết Hàng</span></td>
+                                        <td>
+                                            <a href="#"><i class="las la-pen text-secondary font-16"></i></a>
+                                            <a href="#"><i class="las la-trash-alt text-secondary font-16"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="assets/images/products/american/cherry.png" alt="" height="40">
+                                            <p class="d-inline-block align-middle mb-0">
+                                                <a href="#" class="d-inline-block align-middle mb-0 product-name">Cherry</a>
+                                            </p>
+                                        </td>
+                                        <td>c18340</td>
+                                        <td>Cherry</td>
+                                        <td>Nước Mỹ</td>
+                                        <td>1.200.000</td>
+                                        <td>Kg</td>
+                                        <td>50</td>
+                                        <td>20</td>
+                                        <td>20/10/2021</td>
+                                        <td>30/10/2021</td>
+                                        <td>0</td>
+                                        <td><span class="badge badge-soft-warning">Sắp Hết Hàng</span></td>
+                                        <td>
+                                            <a href="#"><i class="las la-pen text-secondary font-16"></i></a>
+                                            <a href="#"><i class="las la-trash-alt text-secondary font-16"></i></a>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+
+                </div><!-- container -->
+
+                <footer class="footer text-center text-sm-start">
+                    &copy; Klever Fruits
+                </footer><!--end footer-->
+            </div>
+            <!-- end page content -->
+        </div>
+        <!-- end page-wrapper -->
+
+
+
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/metismenu.min.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/feather.min.js"></script>
+        <script src="assets/js/simplebar.min.js"></script>
+        <script src="assets/js/moment.js"></script>
+        <script src="../plugins/daterangepicker/daterangepicker.js"></script>
+
+        <!-- Required datatable js -->
+        <script src="../plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="../plugins/datatables/dataTables.bootstrap5.min.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/app.js"></script>
+        <script>
+            $('#datatable').DataTable();
+        </script>
+
+    </body>
+
+
+<!-- Mirrored from mannatthemes.com/dastone/default/apps-ecommerce-product-list.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 Oct 2021 09:19:50 GMT -->
+</html>

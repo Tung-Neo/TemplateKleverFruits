@@ -1,0 +1,77 @@
+.btn-create{
+  background-color: #ffffff;
+  color: #F5AB1E;
+}
+
+.btn-create:hover{
+  background-color: #F5AB1E;
+  color: #ffffff;
+}
+
+.icon-chat{
+  width: 60%;
+  margin-top: -4px;
+  max-width: 50px;
+  min-width: 28px;
+}
+
+.btn-checkbox-login1{
+  margin-top: 20px;
+}
+
+.btn-checkbox-login1 input:[type=checkbox] {
+    display: none;
+    padding-left: -200px;
+}
+.btn-checkbox-login1 label {
+  position: relative;
+  padding-left: 20px;
+}
+.btn-checkbox-login1 span:before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+    border-radius: 3px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.btn-checkbox-login1 input[type=checkbox]:checked + label span:before {
+    content: "\2713";
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size: 15px;
+    color: #F5AB1E;
+    text-align: center;
+    line-height: 17px;
+    background-color: #ffffff;
+} */
+
+/* .btn-checkbox-login1 input[type='checkbox'] {
+	margin-right: 7px;
+	line-height: 12px;
+	display:none;
+	&+label {
+		width: auto;
+		color: #333;
+	 	span {
+	    display:inline-block;
+	    width: 13px;
+	    height: 12px;
+	    margin: -2px 5px 0 0;
+	    vertical-align: middle;
+	    background: url(../images/icon-checkbox.png) left top no-repeat;
+	    cursor: pointer;
+		}
+	}
+}
+
+.btn-checkbox-login1 input[type="checkbox"]:checked{
+	&+label {
+		span {
+		  background: url(../images/icon-checkbox.png) -13px top no-repeat;
+		}
+	}
+}
