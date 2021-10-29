@@ -50,7 +50,11 @@
                       <h5>Main</h5>
                     </li>
                     <li>
-                        <a href="index.html"> <i data-feather="home" class="align-self-center menu-icon"></i><span>Thống Kê</span></a>
+                        <a href="javascript: void(0);"> <i data-feather="home" class="align-self-center menu-icon"></i><span>Thống Kê</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li class="nav-item"><a class="nav-link" href="index.html"><i class="ti-control-record"></i>Tổng quát</a></li>
+                            <li class="nav-item"><a class="nav-link" href="sales-index.html"><i class="ti-control-record"></i>Bán Hàng</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="apps-ecommerce-account-list.html"> <i data-feather="user" class="align-self-center menu-icon"></i><span>Tài Khoản</span></a>
@@ -218,7 +222,7 @@
                             <div class="page-title-box">
                                 <div class="row">
                                     <div class="col">
-                                        <h4 class="page-title">Tài Khoản</h4>
+                                        <h4 class="page-title">Tổng Quát</h4>
                                     </div><!--end col-->
                                     <div class="col-auto align-self-center">
                                         <div href="#" class="btn btn-sm btn-outline-primary" id="Dash_Date">
@@ -239,69 +243,35 @@
                                 <table id="datatable" class="table table-bordered">
                                     <thead>
                                     <tr>
-                                        <th>Tài khoản</th>
+                                        <th>Tên tài khoản</th>
                                         <th>Email</th>
                                         <th>Mật Khẩu</th>
-                                        <th>Trạng Thái</th>
-                                        <th>Tùy Chọn</th>
+                                        <th>Trang Thái</th>
+                                        <th>Chỉnh Sửa</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <tr>
                                         <td>
-                                            <img src="assets/images/users/user.jpg" class="rounded-circle" alt="" height="40" style="border: 1px solid #7081B9">
+                                            <img src="assets/images/products/img-1.png" alt="" height="40">
                                             <p class="d-inline-block align-middle mb-0">
-                                                <a href="#" class="d-inline-block align-middle mb-0 product-name">Peter</a>
-                                            </p>
-                                        </td>
-                                        <td>peter@gmail.com</td>
-                                        <td>123456</td>
-                                        <td><span class="badge badge-soft-warning">Stock</span></td>
-                                        <td>
-                                            <a href="#"><i class="las la-pen text-secondary font-16"></i></a>
-                                            <a href="#"><i class="las la-trash-alt text-secondary font-16"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img src="assets/images/users/user-1.jpg" class="rounded-circle" alt="" height="40" style="border: 1px solid #7081B9">
-                                            <p class="d-inline-block align-middle mb-0">
-                                                <a href="#" class="d-inline-block align-middle mb-0 product-name">Rior</a>
-                                            </p>
-                                        </td>
-                                        <td>rior@gmail.com</td>
-                                        <td>654321</td>
-                                        <td><span class="badge badge-soft-pink">Sold</span></td>
-                                        <td>
-                                            <a href="#"><i class="las la-pen text-secondary font-16"></i></a>
-                                            <a href="#"><i class="las la-trash-alt text-secondary font-16"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img src="assets/images/users/user-4.jpg" class="rounded-circle" alt="" height="40" style="border: 1px solid #7081B9">
-                                            <p class="d-inline-block align-middle mb-0">
-                                                <a href="#" class="d-inline-block align-middle mb-0 product-name">Linda</a>
-                                            </p>
-                                        </td>
-                                        <td>linda@gmail.com</td>
-                                        <td>abcdef</td>
-                                        <td><span class="badge badge-soft-secondary">Stock</span></td>
-                                        <td>
-                                            <a href="#"><i class="las la-pen text-secondary font-16"></i></a>
-                                            <a href="#"><i class="las la-trash-alt text-secondary font-16"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img src="assets/images/users/user.jpg" class="rounded-circle" alt="" height="40" style="border: 1px solid #7081B9">
-                                            <p class="d-inline-block align-middle mb-0">
-                                                <a href="#" class="d-inline-block align-middle mb-0 product-name">Dastone Washable Face Masks</a>
+                                                <a href="#" class="d-inline-block align-middle mb-0 product-name">Bata Shoes</a>
+                                                <br>
+                                                <span class="text-muted font-13">size-08 (Model 2020)</span>
                                             </p>
                                         </td>
                                         <td>Sports</td>
-                                        <td>fedcba</td>
-                                        <td><span class="badge badge-soft-secondary">Stock</span></td>
+                                        <td>32</td>
+                                        <td>$39</td>
+                                        <td><span class="badge badge-soft-warning">Stock</span></td>
+                                        <td>
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item align-middle"><i class="fas fa-circle text-success"></i></li>
+                                                <li class="list-inline-item align-middle"><i class="fas fa-circle text-pink"></i></li>
+                                                <li class="list-inline-item align-middle"><i class="fas fa-circle text-info"></i></li>
+                                                <li class="list-inline-item align-middle"><i class="fas fa-circle text-warning"></i></li>
+                                            </ul>
+                                        </td>
                                         <td>
                                             <a href="#"><i class="las la-pen text-secondary font-16"></i></a>
                                             <a href="#"><i class="las la-trash-alt text-secondary font-16"></i></a>
@@ -309,29 +279,120 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <img src="assets/images/users/user.jpg" class="rounded-circle" alt="" height="40" style="border: 1px solid #7081B9">
+                                            <img src="assets/images/products/img-2.png" alt="" height="40">
+                                            <p class="d-inline-block align-middle mb-0">
+                                                <a href="#" class="d-inline-block align-middle mb-0 product-name">Apple Watch</a>
+                                                <br>
+                                                <span class="text-muted font-13">40mm & 44mm case size</span>
+                                            </p>
+                                        </td>
+                                        <td>Interior</td>
+                                        <td>10</td>
+                                        <td><span class="badge badge-soft-pink">Sold</span></td>
+                                        <!-- <td>
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item align-middle"><i class="fas fa-circle text-pink"></i></li>
+                                                <li class="list-inline-item align-middle"><i class="fas fa-circle text-info"></i></li>
+                                            </ul>
+                                        </td> -->
+                                        <td>
+                                            <a href="#"><i class="las la-pen text-secondary font-16"></i></a>
+                                            <a href="#"><i class="las la-trash-alt text-secondary font-16"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="assets/images/products/03.png" alt="" height="40">
+                                            <p class="d-inline-block align-middle mb-0">
+                                                <a href="#" class="d-inline-block align-middle mb-0 product-name">Dastone Gear SM-R322</a>
+                                                <br>
+                                                <span class="text-muted font-13">Super AMOLED display</span>
+                                            </p>
+                                        </td>
+                                        <td>Footwear</td>
+                                        <td>24</td>
+                                        <td><span class="badge badge-soft-secondary">Stock</span></td>
+                                        <td>
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item align-middle"><i class="fas fa-circle text-success"></i></li>
+                                                <li class="list-inline-item align-middle"><i class="fas fa-circle text-info"></i></li>
+                                                <li class="list-inline-item align-middle"><i class="fas fa-circle text-warning"></i></li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <a href="#"><i class="las la-pen text-secondary font-16"></i></a>
+                                            <a href="#"><i class="las la-trash-alt text-secondary font-16"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="assets/images/products/04.png" alt="" height="40">
+                                            <p class="d-inline-block align-middle mb-0">
+                                                <a href="#" class="d-inline-block align-middle mb-0 product-name">Dastone Washable Face Masks</a>
+                                                <br>
+                                                <span class="text-muted font-13">Gives germs protection</span>
+                                            </p>
+                                        </td>
+                                        <td>Sports</td>
+                                        <td>8</td>
+                                        <td>$49</td>
+                                        <td><span class="badge badge-soft-secondary">Stock</span></td>
+                                        <td>
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item align-middle"><i class="fas fa-circle text-success"></i></li>
+                                                <li class="list-inline-item align-middle"><i class="fas fa-circle text-warning"></i></li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <a href="#"><i class="las la-pen text-secondary font-16"></i></a>
+                                            <a href="#"><i class="las la-trash-alt text-secondary font-16"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="assets/images/products/01.png" alt="" height="40">
                                             <p class="d-inline-block align-middle mb-0">
                                                 <a href="#" class="d-inline-block align-middle mb-0 product-name">Dastone 360° 1080p Full HD</a>
+                                                <br>
+                                                <span class="text-muted font-13">Day-Night Vision</span>
                                             </p>
                                         </td>
                                         <td>Life Style</td>
-                                        <td>abcxyz</td>
+                                        <td>52</td>
+                                        <td>$89</td>
                                         <td><span class="badge badge-soft-purple">Stock</span></td>
                                         <td>
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item align-middle"><i class="fas fa-circle text-pink"></i></li>
+                                                <li class="list-inline-item align-middle"><i class="fas fa-circle text-info"></i></li>
+                                                <li class="list-inline-item align-middle"><i class="fas fa-circle text-warning"></i></li>
+                                            </ul>
+                                        </td>
+                                        <td>
                                             <a href="#"><i class="las la-pen text-secondary font-16"></i></a>
                                             <a href="#"><i class="las la-trash-alt text-secondary font-16"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <img src="assets/images/users/user.jpg" class="rounded-circle" alt="" height="40" style="border: 1px solid #7081B9">
+                                            <img src="assets/images/products/06.png" alt="" height="40">
                                             <p class="d-inline-block align-middle mb-0">
                                                 <a href="#" class="d-inline-block align-middle mb-0 product-name">New Morden Chair</a>
+                                                <br>
+                                                <span class="text-muted font-13">size-05 (Model 2019)</span>
                                             </p>
                                         </td>
                                         <td>Interior</td>
-                                        <td>xyzabc</td>
+                                        <td>6</td>
+                                        <td>$20</td>
                                         <td><span class="badge badge-soft-warning">Stock</span></td>
+                                        <td>
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item align-middle"><i class="fas fa-circle text-success"></i></li>
+                                                <li class="list-inline-item align-middle"><i class="fas fa-circle text-pink"></i></li>
+                                                <li class="list-inline-item align-middle"><i class="fas fa-circle text-warning"></i></li>
+                                            </ul>
+                                        </td>
                                         <td>
                                             <a href="#"><i class="las la-pen text-secondary font-16"></i></a>
                                             <a href="#"><i class="las la-trash-alt text-secondary font-16"></i></a>
@@ -339,14 +400,25 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <img src="assets/images/users/user.jpg" class="rounded-circle" alt="" height="40" style="border: 1px solid #7081B9">
+                                            <img src="assets/images/products/05.png" alt="" height="40">
                                             <p class="d-inline-block align-middle mb-0">
                                                 <a href="#" class="d-inline-block align-middle mb-0 product-name">Dastone Fever Gun</a>
+                                                <br>
+                                                <span class="text-muted font-13">Used for Baby and Adult</span>
                                             </p>
                                         </td>
                                         <td>Interior</td>
-                                        <td>hrelvn</td>
+                                        <td>32</td>
+                                        <td>$39</td>
                                         <td><span class="badge badge-soft-warning">Stock</span></td>
+                                        <td>
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item align-middle"><i class="fas fa-circle text-success"></i></li>
+                                                <li class="list-inline-item align-middle"><i class="fas fa-circle text-pink"></i></li>
+                                                <li class="list-inline-item align-middle"><i class="fas fa-circle text-info"></i></li>
+                                                <li class="list-inline-item align-middle"><i class="fas fa-circle text-warning"></i></li>
+                                            </ul>
+                                        </td>
                                         <td>
                                             <a href="#"><i class="las la-pen text-secondary font-16"></i></a>
                                             <a href="#"><i class="las la-trash-alt text-secondary font-16"></i></a>
@@ -355,14 +427,23 @@
 
                                     <tr>
                                         <td>
-                                            <img src="assets/images/users/user.jpg" class="rounded-circle" alt="" height="40" style="border: 1px solid #7081B9">
+                                            <img src="assets/images/products/02.png" alt="" height="40">
                                             <p class="d-inline-block align-middle mb-0">
                                                 <a href="#" class="d-inline-block align-middle mb-0 product-name">Nike Air Max 101</a>
+                                                <br>
+                                                <span class="text-muted font-13">Size-05 to 13 (Model 2020)</span>
                                             </p>
                                         </td>
                                         <td>Sports</td>
-                                        <td>idnayf</td>
+                                        <td>32</td>
+                                        <td>$39</td>
                                         <td><span class="badge badge-soft-warning">Stock</span></td>
+                                        <td>
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item align-middle"><i class="fas fa-circle text-success"></i></li>
+                                                <li class="list-inline-item align-middle"><i class="fas fa-circle text-info"></i></li>
+                                            </ul>
+                                        </td>
                                         <td>
                                             <a href="#"><i class="las la-pen text-secondary font-16"></i></a>
                                             <a href="#"><i class="las la-trash-alt text-secondary font-16"></i></a>
@@ -370,14 +451,25 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <img src="assets/images/users/user.jpg" class="rounded-circle" alt="" height="40" style="border: 1px solid #7081B9">
+                                            <img src="assets/images/products/img-5.png" alt="" height="40">
                                             <p class="d-inline-block align-middle mb-0">
                                                 <a href="#" class="d-inline-block align-middle mb-0 product-name">American Bag</a>
+                                                <br>
+                                                <span class="text-muted font-13">size-08 (Model 2020)</span>
                                             </p>
                                         </td>
                                         <td>Sports</td>
-                                        <td>ngidyb</td>
+                                        <td>32</td>
+                                        <td>$39</td>
                                         <td><span class="badge badge-soft-warning">Stock</span></td>
+                                        <td>
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item align-middle"><i class="fas fa-circle text-success"></i></li>
+                                                <li class="list-inline-item align-middle"><i class="fas fa-circle text-pink"></i></li>
+                                                <li class="list-inline-item align-middle"><i class="fas fa-circle text-info"></i></li>
+                                                <li class="list-inline-item align-middle"><i class="fas fa-circle text-warning"></i></li>
+                                            </ul>
+                                        </td>
                                         <td>
                                             <a href="#"><i class="las la-pen text-secondary font-16"></i></a>
                                             <a href="#"><i class="las la-trash-alt text-secondary font-16"></i></a>
@@ -385,14 +477,23 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <img src="assets/images/users/user.jpg" class="rounded-circle" alt="" height="40" style="border: 1px solid #7081B9">
+                                            <img src="assets/images/products/img-3.png" alt="" height="40">
                                             <p class="d-inline-block align-middle mb-0">
                                                 <a href="#" class="d-inline-block align-middle mb-0 product-name">Sneakers shoes</a>
+                                                <br>
+                                                <span class="text-muted font-13">Size-05 to 13 (Model 2020)</span>
                                             </p>
                                         </td>
                                         <td>Interior</td>
-                                        <td>uinepy</td>
+                                        <td>10</td>
+                                        <td>$99</td>
                                         <td><span class="badge badge-soft-pink">Sold</span></td>
+                                        <td>
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item align-middle"><i class="fas fa-circle text-pink"></i></li>
+                                                <li class="list-inline-item align-middle"><i class="fas fa-circle text-info"></i></li>
+                                            </ul>
+                                        </td>
                                         <td>
                                             <a href="#"><i class="las la-pen text-secondary font-16"></i></a>
                                             <a href="#"><i class="las la-trash-alt text-secondary font-16"></i></a>
