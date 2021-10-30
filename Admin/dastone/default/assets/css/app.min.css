@@ -97,3 +97,10 @@ input:checked + .slider-switch:before {
 .slider-switch.round-switch:before {
   border-radius: 50%;
 }
+
+.nav-order{
+  color: black;
+}
+.nav-order:hover{
+  color: #ffffff;
+}
