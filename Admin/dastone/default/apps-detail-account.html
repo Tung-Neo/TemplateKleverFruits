@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 
-<!-- Mirrored from mannatthemes.com/dastone/default/apps-ecommerce-product-list.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 Oct 2021 09:19:48 GMT -->
+<!-- Mirrored from mannatthemes.com/dastone/default/apps-new-project.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 Oct 2021 09:19:46 GMT -->
 <head>
         <meta charset="utf-8" />
         <title>Admin - Klever Fruits</title>
@@ -14,9 +15,7 @@
         <!-- App favicon -->
         <link rel="shortcut icon" href="assets/images/favicon.ico.png">
 
-        <!-- DataTables -->
-        <link href="../plugins/datatables/dataTables.bootstrap5.min.css" rel="stylesheet" type="text/css" />
-        <link href="../plugins/datatables/buttons.bootstrap5.min.css" rel="stylesheet" type="text/css" />
+        <link href="../plugins/lightpick/lightpick.css" rel="stylesheet" />
 
         <!-- App css -->
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -29,7 +28,7 @@
 
     <body>
         <!-- Left Sidenav -->
-        <div class="left-sidenav">
+          <div class="left-sidenav">
             <!-- LOGO -->
             <div class="brand">
                 <a href="index.html" class="logo">
@@ -221,7 +220,7 @@
                             <div class="page-title-box">
                                 <div class="row">
                                     <div class="col">
-                                        <h4 class="page-title">Phân Loại</h4>
+                                        <h4 class="page-title">Tài Khoản</h4>
                                     </div><!--end col-->
                                     <div class="col-auto align-self-center">
                                         <div href="#" class="btn btn-sm btn-outline-primary" id="Dash_Date">
@@ -237,130 +236,66 @@
                     <!-- end page title end breadcrumb -->
                     <div class="row">
                         <div class="col-12">
-                            <div class="table-responsive">
-                              <a href="apps-new-category.html">
-                                <span data-repeater-create="" class="btn btn-outline-secondary">
-                                  <span class="fas fa-plus"></span> Thêm phân loại
-                                </span><br><br>
-                              </a>
-                                <table id="datatable" class="table table-bordered">
-                                    <thead>
-                                    <tr>
-                                      <th>Phân Loại</th>
-                                      <th>Mã Phân Loại</th>
-                                      <th>Tùy Chọn</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>Bưởi</td>
-                                        <td>b</td>
-                                        <td>
-                                            <a href="apps-new-category.html"><i class="las la-pen text-secondary font-16"></i></a>
-                                            <!-- <button type="button" class="btn btn-outline-primary btn-sm waves-effect waves-light" id="sa-warning">Click me</button> -->
-                                            <a href="#"><i class="las la-trash-alt text-secondary font-16" id="sa-warning"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Cam</td>
-                                        <td>c</td>
-                                        <td>
-                                            <a href="apps-new-category.html"><i class="las la-pen text-secondary font-16"></i></a>
-                                            <!-- <button type="button" class="btn btn-outline-primary btn-sm waves-effect waves-light" id="sa-warning">Click me</button> -->
-                                            <a href="#"><i class="las la-trash-alt text-secondary font-16" id="sa-warning"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Cherry</td>
-                                        <td>c</td>
-                                        <td>
-                                            <a href="apps-new-category.html"><i class="las la-pen text-secondary font-16"></i></a>
-                                            <!-- <button type="button" class="btn btn-outline-primary btn-sm waves-effect waves-light" id="sa-warning">Click me</button> -->
-                                            <a href="#"><i class="las la-trash-alt text-secondary font-16" id="sa-warning"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Dưa</td>
-                                        <td>d</td>
-                                        <td>
-                                            <a href="apps-new-category.html"><i class="las la-pen text-secondary font-16"></i></a>
-                                            <!-- <button type="button" class="btn btn-outline-primary btn-sm waves-effect waves-light" id="sa-warning">Click me</button> -->
-                                            <a href="#"><i class="las la-trash-alt text-secondary font-16" id="sa-warning"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Hồng</td>
-                                        <td>h</td>
-                                        <td>
-                                            <a href="apps-new-category.html"><i class="las la-pen text-secondary font-16"></i></a>
-                                            <!-- <button type="button" class="btn btn-outline-primary btn-sm waves-effect waves-light" id="sa-warning">Click me</button> -->
-                                            <a href="#"><i class="las la-trash-alt text-secondary font-16" id="sa-warning"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Kiwi</td>
-                                        <td>k</td>
-                                        <td>
-                                            <a href="apps-new-category.html"><i class="las la-pen text-secondary font-16"></i></a>
-                                            <!-- <button type="button" class="btn btn-outline-primary btn-sm waves-effect waves-light" id="sa-warning">Click me</button> -->
-                                            <a href="#"><i class="las la-trash-alt text-secondary font-16" id="sa-warning"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lê</td>
-                                        <td>l</td>
-                                        <td>
-                                            <a href="apps-new-category.html"><i class="las la-pen text-secondary font-16"></i></a>
-                                            <!-- <button type="button" class="btn btn-outline-primary btn-sm waves-effect waves-light" id="sa-warning">Click me</button> -->
-                                            <a href="#"><i class="las la-trash-alt text-secondary font-16" id="sa-warning"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Nho</td>
-                                        <td>n</td>
-                                        <td>
-                                            <a href="apps-new-category.html"><i class="las la-pen text-secondary font-16"></i></a>
-                                            <!-- <button type="button" class="btn btn-outline-primary btn-sm waves-effect waves-light" id="sa-warning">Click me</button> -->
-                                            <a href="#"><i class="las la-trash-alt text-secondary font-16" id="sa-warning"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Quýt</td>
-                                        <td>q</td>
-                                        <td>
-                                            <a href="apps-new-category.html"><i class="las la-pen text-secondary font-16"></i></a>
-                                            <!-- <button type="button" class="btn btn-outline-primary btn-sm waves-effect waves-light" id="sa-warning">Click me</button> -->
-                                            <a href="#"><i class="las la-trash-alt text-secondary font-16" id="sa-warning"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Táo</td>
-                                        <td>t</td>
-                                        <td>
-                                            <a href="apps-new-category.html"><i class="las la-pen text-secondary font-16"></i></a>
-                                            <!-- <button type="button" class="btn btn-outline-primary btn-sm waves-effect waves-light" id="sa-warning">Click me</button> -->
-                                            <a href="#"><i class="las la-trash-alt text-secondary font-16" id="sa-warning"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Việt Quất</td>
-                                        <td>v</td>
-                                        <td>
-                                            <a href="apps-new-category.html"><i class="las la-pen text-secondary font-16"></i></a>
-                                            <!-- <button type="button" class="btn btn-outline-primary btn-sm waves-effect waves-light" id="sa-warning">Click me</button> -->
-                                            <a href="#"><i class="las la-trash-alt text-secondary font-16" id="sa-warning"></i></a>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div> <!-- end col -->
-                    </div> <!-- end row -->
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <form>
+                                              <img src="assets/images/users/user.jpg" alt="" height="200" class="rounded-circle" style="border: 1px solid #7081B9">
+                                              <br><br>
+                                              <h3 for="userName">&nbsp;Nguyễn Hữu Danh</h3>
+                                            </form>  <!--end form-->
+                                            <br><br>
+                                        </div><!--end col-->
+                                        <div class="col-lg-8 ms-auto align-self-center">
+                                            <form>
+                                              <div class="form-group">
+                                                  <label class="form-label" for="projectName">Tên Đăng Nhập</label>
+                                                  <p class="form-control" id="projectName" aria-describedby="emailHelp">huudanh8671</p>
+                                              </div><!--end form-group-->
+                                              <div class="form-group">
+                                                  <label class="form-label" for="projectName">Email</label>
+                                                  <p class="form-control" id="email" aria-describedby="emailHelp">huudanhtq@gmail.com</p>
+                                              </div><!--end form-group-->
+                                              <div class="form-group">
+                                                  <div class="row">
+                                                    <div class="col-lg-6 col-6">
+                                                      <label class="form-label" for="pro-rate">Giới Tính</label>
+                                                      <p class="form-control" id="sex">Nam</p>
+                                                    </div><!--end col-->
+                                                    <div class="col-lg-6 col-6">
+                                                      <label class="form-label" for="pro-start-date">Ngày Sinh</label>
+                                                      <p class="form-control" id="birth-of-date">30/08/1999</p>
+                                                    </div><!--end col-->
+                                                  </div><!--end row-->
+                                              </div><!--end form-group-->
+                                              <div class="form-group">
+                                                  <div class="row">
+                                                    <div class="col-lg-6 col-6">
+                                                      <label class="form-label" for="pro-start-date">Tổng số đơn hàng đã đặt</label>
+                                                      <p class="form-control" id="birth-of-date">39</p>
+                                                    </div><!--end col-->
+                                                    <div class="col-lg-6 col-6">
+                                                      <label class="form-label" for="pro-start-date">Tổng số tiền đã mua hàng</label>
+                                                      <p class="form-control" id="birth-of-date">12.479.000 VND</p>
+                                                    </div><!--end col-->
+                                                  </div><!--end row-->
+                                              </div><!--end form-group-->
+                                              <a href="apps-ecommerce-account-list.html">
+                                                <button type="button" class="btn btn-soft-primary btn-sm" style="width: 100px; height: 30px;">Xác nhận</button>
+                                              </a>
+                                            </form>
+                                        </div><!--end col-->
+                                    </div><!--end row-->
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col-->
+                    </div><!--end row-->
 
                 </div><!-- container -->
 
                 <footer class="footer text-center text-sm-start">
-                    &copy; Klever Fruits
+                    &copy;Klever Fruits
                 </footer><!--end footer-->
             </div>
             <!-- end page content -->
@@ -380,18 +315,14 @@
         <script src="assets/js/moment.js"></script>
         <script src="../plugins/daterangepicker/daterangepicker.js"></script>
 
-        <!-- Required datatable js -->
-        <script src="../plugins/datatables/jquery.dataTables.min.js"></script>
-        <script src="../plugins/datatables/dataTables.bootstrap5.min.js"></script>
+        <script src="../plugins/lightpick/lightpick.js"></script>
+        <script src="assets/pages/jquery.projects_new.init.js"></script>
 
         <!-- App js -->
         <script src="assets/js/app.js"></script>
-        <script>
-            $('#datatable').DataTable();
-        </script>
 
     </body>
 
 
-<!-- Mirrored from mannatthemes.com/dastone/default/apps-ecommerce-product-list.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 Oct 2021 09:19:50 GMT -->
+<!-- Mirrored from mannatthemes.com/dastone/default/apps-new-project.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 Oct 2021 09:19:47 GMT -->
 </html>
