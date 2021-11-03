@@ -108,27 +108,6 @@
                                         <span class="line"></span>
                                         </button>
                                     </li>
-                                    <li class="side-wrap user-wrap">
-                                        <div class="acc-desk">
-                                            <div class="user-icon">
-                                                <a href="account.html" class="user-icon-desk">
-                                                    <span><i class="icon-user"></i></span>
-                                                </a>
-                                            </div>
-                                            <div class="user-info">
-                                                <span class="acc-title">Tài Khoản</span>
-                                                <div class="account-login">
-                                                    <a href="register.html">Đăng Kí</a>
-                                                    <a href="login.html">Đăng nhập</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="acc-mob">
-                                            <a href="account.html" class="user-icon">
-                                                <span><i class="icon-user"></i></span>
-                                            </a>
-                                        </div>
-                                    </li>
                                     <li class="side-wrap wishlist-wrap">
                                         <a href="wishlist.html" class="header-wishlist">
                                             <span class="wishlist-icon"><i>
@@ -148,6 +127,47 @@
                                                 </a>
                                             </div>
                                         </div>
+                                    </li>
+                                    <li class="side-wrap user-wrap">
+                                      <div class="acc-desk">
+                                          <div class="dropdown-account">
+                                            <button onclick="hamDropdown()" class="nut_dropdown">
+                                              <div class="user-info">
+                                                  <span class="acc-title">Phương Thảo</span>
+                                              </div>
+                                            </button>
+                                            <div class="noidung_dropdown">
+                                              <a href="profile.html">Trang Cá Nhân</a>
+                                              <a href="pro-wishlist.html">Danh Sách Yêu Thích</a>
+                                              <a href="order-history.html">Lịch Sử Đặt Hàng</a>
+                                              <a href="pro-tickets.html">Voncher Của Tôi</a>
+                                              <a href="login.html">Đăng Xuất</a>
+                                            </div>
+                                          </div>
+                                          <div class="dropdown-account">
+                                            <button onclick="hamDropdown()" class="nut_dropdown">
+                                              <div class="user-info">
+                                                <div class="user-icon">
+                                                  <a href="#" class="user-icon-desk">
+                                                    <span><i class="icon-user"></i></span>
+                                                  </a>
+                                                </div>
+                                              </div>
+                                            </button>
+                                            <div class="noidung_dropdown">
+                                              <a href="profile.html">Trang Cá Nhân</a>
+                                              <a href="pro-wishlist.html">Danh Sách Yêu Thích</a>
+                                              <a href="order-history.html">Lịch Sử Đặt Hàng</a>
+                                              <a href="pro-tickets.html">Voncher Của Tôi</a>
+                                              <a href="login.html">Đăng Xuất</a>
+                                            </div>
+                                          </div>
+                                      </div>
+                                      <div class="acc-mob">
+                                        <a href="profile.html" class="user-icon">
+                                          <span><i class="icon-user"></i></span>
+                                        </a>
+                                      </div>
                                     </li>
                                 </ul>
                             </div>
@@ -586,8 +606,8 @@
                     <div class="col">
                         <div class="about-l">
                             <ul class="about-link">
-                                <li class="go-home"><a href="index1.html">Home</a></li>
-                                <li class="about-p"><span>Faq's</span></li>
+                                <li class="go-home"><a href="index1.html">Trang Chủ</a></li>
+                                <li class="about-p"><span>Câu Hỏi Thường Gặp</span></li>
                             </ul>
                         </div>
                     </div>
@@ -602,39 +622,40 @@
             <div class="row">
                 <div class="col">
                     <div class="faq-title">
-                        <h1>FAQ's</h1>
-                        <p>Below are frequently asked questions, you may find the answer for yourself</p>
+                        <h1>Câu Hỏi Thường Gặp</h1>
+                        <p>Dưới đây là những câu hỏi thường gặp, bạn có thể tìm thấy câu trả lời cho mình</p>
                     </div>
                     <div class="faq-box">
                         <ul class="faq-ul">
                             <li class="faq-li">
-                                <h3><span>1.</span> What is mikshaa’s return policy?</h3>
-                                <span class="faq-desc">Our 100% buyer protection program allows for easy returns Only for products not as per description/photo on the damaged defective broken" condition.</span>
+                                <h3><span>1.</span> Chính sách hoàn trả là gì?</h3>
+                                <span class="faq-desc">Chương trình bảo vệ người mua 100% của chúng tôi cho phép đổi trả hàng dễ dàng Chỉ dành cho những sản phẩm không đúng như mô tả / ảnh chụp trong tình trạng hư hỏng bị lỗi.</span>
                             </li>
                             <li class="faq-li">
-                                <h3><span>2.</span> How to raise dispute for an order?</h3>
-                                <span class="faq-desc">You can raise a dispute within 7 days of delivery, in by sending an email to support@mikshaa.com with images of broken defective damaged 7 days of...</span>
+                                <h3><span>2.</span> Làm thế nào để đưa ra khiếu nại về đơn hàng?</h3>
+                                <span class="faq-desc">Bạn có thể đưa ra khiếu nại trong vòng 7 ngày kể từ ngày giao hàng, bằng cách gửi email đến cskh@kleverjuice.com.vn kèm theo hình ảnh của ...</span>
                             </li>
                             <li class="faq-li">
-                                <h3><span>3.</span> When will i be refunded?</h3>
-                                <span class="faq-desc">Self ship orders We will refund when your item back from warehouse. The refund amount wii be credited within 3 to 5 working days in your Mikshaa Acoount.</span>
+                                <h3><span>3.</span> Khi nào tôi sẽ được hoàn lại tiền?</h3>
+                                <span class="faq-desc">Chúng tôi sẽ hoàn lại tiền khi hàng của bạn trở lại từ kho. Số tiền hoàn lại sẽ được chuyển đến tài khoản của bạn trong vòng 3 đến 5 ngày làm việc.</span>
                             </li>
                         </ul>
                         <ul class="faq-ul">
                             <li class="faq-li">
-                                <h3><span>4.</span> What are the shipping charges?</h3>
-                                <span class="faq-desc">Delivery charge varies with each product. Most of product FREE Most of product FREE delivery in India delivery charge varies with each product. Most of delivery in India.</span>
+                                <h3><span>4.</span> Chi phí vận chuyển được tính như thế nào?</h3>
+                                <span class="faq-desc">Chi phí vận chuyển sẽ được tính tùy theo khoảng cách giao hàng. Bạn sẽ được MIỄN PHÍ giao hàng khi đặt đơn hàng trị giá trên 1.000.000 đồng.</span>
                             </li>
                             <li class="faq-li">
-                                <h3><span>5.</span> What is the estimated delivery time?</h3>
-                                <span class="faq-desc">The estimated time of delivery is within 7 working days for domestic orders and 15-20 working days for international orders. All 4 to 5 days from the warehouse.</span>
+                                <h3><span>5.</span> Thời gian giao hàng ước tính là bao lâu?</h3>
+                                <span class="faq-desc">Thời gian giao hàng dự kiến ​​trong vòng 1 đến ngày đối với đơn hàng trong nước và 5 đến 7 ngày làm việc đối với đơn hàng quốc tế kể từ khi xuất kho.</span>
                             </li>
                             <li class="faq-li">
-                                <h3><span>6.</span> How will the delivery be done?</h3>
-                                <span class="faq-desc">We try to process all deliveries through reputed courier companies like Bluedart, Aramex,E-come, DTDC, DHL and Fedex. In some cases, your pincode by these.</span>
+                                <h3><span>6.</span> Việc giao hàng sẽ được thực hiện như thế nào?</h3>
+                                <span class="faq-desc">Chúng tôi cố gắng xử lý tất cả việc giao hàng thông qua các công ty chuyển phát nhanh có uy tín như ViettelPost, J&T, GHTK, GHN...</span>
                             </li>
+                            <br><br>
                         </ul>
-                        <a href="contact.html" class="btn-style1">Still have a question?</a>
+                        <a href="contact.html" class="btn-style1">Bạn có câu hỏi cho chúng tôi?</a>
                     </div>
                 </div>
             </div>
@@ -647,49 +668,42 @@
             <div class="row">
                 <div class="col">
                     <div class="faq-title">
-                        <h1>General questions</h1>
+                        <h1>Câu Hỏi Chung</h1>
                     </div>
                     <div class="faq-start">
-                        <span>Q.1</span>
-                        <a href="#collapse-7" data-bs-toggle="collapse" class="collapse-title">How are items packaged?</a>
+                        <span>1</span>
+                        <a href="#collapse-7" data-bs-toggle="collapse" class="collapse-title">Các mặt hàng được đóng gói như thế nào?</a>
                         <div class="collapse collapse-content" id="collapse-7">
-                            <p>All items are carefully packaged as to avoid any form of damage.</p>
+                            <p>Tất cả các mặt hàng được đóng gói cẩn thận để tránh bất kỳ hình thức thiệt hại.</p>
                         </div>
                     </div>
                     <div class="faq-start">
-                        <span>Q.2</span>
-                        <a href="#collapse-8" data-bs-toggle="collapse" class="collapse-title">Who would be responsible for paying local taxes in countries outside of India?</a>
+                        <span>2</span>
+                        <a href="#collapse-8" data-bs-toggle="collapse" class="collapse-title"> Những cách để thanh toán đơn hàng?</a>
                         <div class="collapse collapse-content" id="collapse-8">
-                            <p>Customs duty & other international taxes etc. if applicable will have to be borne by the customer according to the laws of the land.</p>
+                            <p>Chúng tôi cung cấp cho bạn nhiều phương thức thanh toán. Dù phương thức thanh toán trực tuyến của bạn là gì, bạn có thể tin tưởng rằng các đối tác cổng thanh toán đáng tin cậy của Klever Fruits sử dụng công nghệ mã hóa an toàn để giữ bí mật chi tiết giao dịch của bạn mọi lúc.</p>
+                            <p>Bạn có thể sử dụng Ngân hàng Trực tuyến, Thẻ Ghi nợ, Thẻ Tín dụng và Tiền mặt khi Giao hàng để thực hiện giao dịch mua hàng của mình. Chúng tôi cũng chấp nhận thanh toán bằng thẻ tín dụng / thẻ ghi nợ Visa và MasterCard.</p>
                         </div>
                     </div>
                     <div class="faq-start">
-                        <span>Q.3</span>
-                        <a href="#collapse-9" data-bs-toggle="collapse" class="collapse-title"> How do i pay for a Mikshaa’s purchase?</a>
+                        <span>3</span>
+                        <a href="#collapse-9" data-bs-toggle="collapse" class="collapse-title">Tôi có thể thanh toán bằng thẻ tín dụng / thẻ ghi nợ hoặc Internet Banking qua điện thoại di động của mình không?</a>
                         <div class="collapse collapse-content" id="collapse-9">
-                            <p>Mikshaa offers you multiple payment methods. Whatever your online mode of payment, you can trust assured that Mikshaa's trusted payment gateway partners use secure encryption technology to keep your transaction details confidential at all times.</p>
-                            <p>You may use Internet Banking, Debit Card, Credit Card and Cash on Delivery to make your purchase. We also accept payments made using Visa, MasterCard, American Express and Any Club credit/debit cards.</p>
+                            <p>Chắc chắn rồi, bạn có thể thực hiện thanh toán bằng thẻ tín dụng thông qua trang web di động Klever Fruits. Chúng tôi sử dụng công nghệ mã hóa 256-bit để bảo vệ thông tin thẻ của bạn trong khi truyền an toàn đến các cổng thanh toán an toàn và đáng tin cậy do các ngân hàng hàng đầu quản lý.</p>
                         </div>
                     </div>
                     <div class="faq-start">
-                        <span>Q.4</span>
-                        <a href="#collapse-10" data-bs-toggle="collapse" class="collapse-title">Can i make a credit/debit card or Internet Banking payment through my mobile?</a>
+                        <span>4</span>
+                        <a href="#collapse-10" data-bs-toggle="collapse" class="collapse-title">Sử dụng thẻ tín dụng / thẻ ghi nợ của tôi trên Klever Fruits có an toàn không?</a>
                         <div class="collapse collapse-content" id="collapse-10">
-                            <p>Yes, you can make credit card payments through the Mikshaa mobile site. Mikshaa uses 256-bit encryption technology to protect your card information while securely transmitting it to the secure and trusted payment gateways managed by leading banks.</p>
+                            <p>Mọi thông tin thẻ của bạn sẽ được bảo mật tuyệt đối, tất cả các thông tin trong khi truyền an toàn đến các cổng thanh toán an toàn và đáng tin cậy do các ngân hàng hàng đầu quản lý.</p>
                         </div>
                     </div>
                     <div class="faq-start">
-                        <span>Q.5</span>
-                        <a href="#collapse-11" data-bs-toggle="collapse" class="collapse-title">Is it safe to use my credit/debit card on Mikshaa?</a>
+                        <span>5</span>
+                        <a href="#collapse-11" data-bs-toggle="collapse" class="collapse-title">Các bạn có lưu trữ thông tin thẻ tín dụng không?</a>
                         <div class="collapse collapse-content" id="collapse-11">
-                            <p>Is it safe to use my credit/debit card on Mikshaa?</p>
-                        </div>
-                    </div>
-                    <div class="faq-start">
-                        <span>Q.6</span>
-                        <a href="#collapse-12" data-bs-toggle="collapse" class="collapse-title">Does Craftsvilla store my credit card information?</a>
-                        <div class="collapse collapse-content" id="collapse-12">
-                            <p>No, Mikshaa does not collect or store your account information at all. Your transaction is authorized at multiple points, first by EBS/CCavenue and subsequently by Visa/MasterCard/Amex secure directly without any information passing through us.</p>
+                            <p>Không, Klever Fruits hoàn toàn không thu thập hoặc lưu trữ thông tin tài khoản của bạn. Giao dịch của bạn được ủy quyền tại nhiều điểm để được bảo mật trực tiếp mà không cần bất kỳ thông tin nào chuyển qua chúng tôi.</p>
                         </div>
                     </div>
                 </div>
@@ -704,12 +718,12 @@
                 <div class="row">
                     <div class="col">
                         <div class="home-news">
-                            <h2>Get The Latest Deals</h2>
-                            <p>And Receive 20% Off Coupon For First Shopping</p>
+                            <h2>Nhận các ưu đãi mới nhất</h2>
+                            <p>Và nhận phiếu giảm giá 20% cho lần mua sắm đầu tiên</p>
                             <form>
-                                <input type="text" name="search" placeholder="Enter your email address">
-                                <button class="btn btn-style3">Subscribe</button>
-                                <button class="btn btn-style1 news-sub">Subscribe</button>
+                                <input type="text" name="search" placeholder="Nhập email của bạn">
+                                <button class="btn btn-style3">Gửi</button>
+                                <button class="btn btn-style1 news-sub">Gửi</button>
                             </form>
                         </div>
                     </div>

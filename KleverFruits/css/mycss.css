@@ -47,31 +47,38 @@
     text-align: center;
     line-height: 17px;
     background-color: #ffffff;
-} */
-
-/* .btn-checkbox-login1 input[type='checkbox'] {
-	margin-right: 7px;
-	line-height: 12px;
-	display:none;
-	&+label {
-		width: auto;
-		color: #333;
-	 	span {
-	    display:inline-block;
-	    width: 13px;
-	    height: 12px;
-	    margin: -2px 5px 0 0;
-	    vertical-align: middle;
-	    background: url(../images/icon-checkbox.png) left top no-repeat;
-	    cursor: pointer;
-		}
-	}
 }
 
-.btn-checkbox-login1 input[type="checkbox"]:checked{
-	&+label {
-		span {
-		  background: url(../images/icon-checkbox.png) -13px top no-repeat;
-		}
-	}
+/* Nút Dropdown*/
+.nut_dropdown {
+  background-color: #ffffff;
+  border: none;
+}
+
+/* Thiết lập vị trí cho thẻ div với class dropdown*/
+.dropdown-account {
+  position: relative;
+  display: inline-block;
+}
+
+/* Nội dung Dropdown */
+.noidung_dropdown {
+  /*Ẩn nội dụng các đường dẫn*/
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+/* Thiết kế style cho các đường dẫn tronng Dropdown */
+.noidung_dropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.hienThi{
+  display:block;
 }
