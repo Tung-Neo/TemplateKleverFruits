@@ -12634,7 +12634,7 @@ a.scroll:hover span{
 .order-histry-area .order-history .order-info .table tbody tr td.canceled {
     color: #ff5252;
 }
-.order-histry-area .order-history .order-info .table tbody tr td.process {
+.order-histry-area .order-history .order-info .table tbody tr td.transport {
     color: #50c6e9;
 }
 .order-histry-area .order-history .order-info .table tbody tr td.delayed {
@@ -12642,6 +12642,12 @@ a.scroll:hover span{
 }
 .order-histry-area .order-history .order-info .table tbody tr td.delivered {
     color: #43d9a3;
+}
+.confirmation {
+  color: #9BA7CA;
+}
+.order-histry-area .order-history .order-info .table tbody tr td.confirmation {
+    color: #9BA7CA;
 }
 /* profile page css */
 .order-histry-area .order-history .profile-form {

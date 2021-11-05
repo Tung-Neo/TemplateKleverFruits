@@ -82,3 +82,25 @@
 .hienThi{
   display:block;
 }
+
+
+.container-pw{
+   position: relative;
+ }
+ .container-pw input{
+   outline: none;
+ }
+ .container-pw span{
+   position: absolute;
+   right: 15px;
+   top: 70%;
+   transform: translateY(-50%);
+   cursor: pointer;
+   display: none;
+ }
+ .container-pw input:valid ~ span{
+   display: block;
+ }
+ .container-pw span i.hide-btn::before{
+   content: "f070";
+ }

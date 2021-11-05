@@ -36,6 +36,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <link rel="stylesheet" type="text/css" href="css/mycss.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body class="home-1">
     <!-- top notificationbar start -->
@@ -113,7 +115,7 @@
                                             <span class="wishlist-icon"><i>
                                               <img src="../KleverFruits/image/chat-icon.jpg" alt="" class="icon-chat">
                                             </i></span>
-                                            <span class="wishlist-counter">0</span>
+                                            <!-- <span class="wishlist-counter">0</span> -->
                                         </a>
                                     </li>
                                     <li class="side-wrap cart-wrap">
@@ -625,7 +627,7 @@
                         <div class="profile">
                             <div class="order-pro">
                                 <div class="pro-img">
-                                    <a href="javascript:void(0)"><img src="image/user-ava.jpg" alt="img" class="img-fluid"></a>
+                                    <a href="javascript:void(0)"><img src="image/user-6.jpg" alt="img" class="img-fluid"></a>
                                 </div>
                                 <div class="order-name">
                                     <h4>Phương Thảo</h4>
@@ -634,55 +636,72 @@
                             </div>
                             <div class="order-his-page">
                                 <ul class="profile-ul">
-                                  <li class="profile-li"><a href="profile.html" class="active">Profile</a></li>
-                                    <li class="profile-li"><a href="order-history.html"><span>Orders</span> <span class="pro-count">5</span></a></li>
-                                    <li class="profile-li"><a href="pro-addresses.html">Address</a></li>
-                                    <li class="profile-li"><a href="pro-wishlist.html"><span>Wishlist</span> <span class="pro-count">3</span></a></li>
-                                    <li class="profile-li"><a href="pro-tickets.html"><span>My tickets</span> <span class="pro-count">4</span></a></li>
+                                  <li class="profile-li"><a href="profile.html" class="active">Trang Cá Nhân</a></li>
+                                  <li class="profile-li"><a href="pro-wishlist.html"><span>Danh Sách Yêu Thích</span> <span class="pro-count">3</span></a></li>
+                                  <li class="profile-li"><a href="order-history.html"><span>Lịch Sử Đặt Hàng</span> <span class="pro-count">5</span></a></li>
+                                  <li class="profile-li"><a href="pro-tickets.html"><span>Voncher Của Tôi</span> <span class="pro-count">4</span></a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="profile-form">
                             <form>
+                              <h4>Thông Tin Cá Nhân</h4>
                                 <ul class="pro-input-label">
                                     <li>
-                                        <label>First name</label>
-                                        <input type="text" name="name" placeholder="First name">
+                                        <label>Họ Và Tên</label>
+                                        <input type="text" name="name" placeholder="Họ và tên" value="Phương Thảo">
                                     </li>
                                     <li>
-                                        <label>Last name</label>
-                                        <input type="text" name="name" placeholder="Last name">
-                                    </li>
-                                </ul>
-                                <ul class="pro-input-label">
-                                    <li>
-                                        <label>E-mail address</label>
-                                        <input type="text" name="name" placeholder="E-mail address" required>
-                                    </li>
-                                    <li>
-                                        <label>Phone number</label>
-                                        <input type="text" name="name" placeholder="Phone number">
+                                      <label>E-mail</label>
+                                      <input type="text" name="name" placeholder="E-mail" value="phuongthao@gmail.com">
                                     </li>
                                 </ul>
                                 <ul class="pro-input-label">
                                     <li>
-                                        <label>New password</label>
-                                        <input type="text" name="name" placeholder="New password">
+                                        <label>Số điện thoại</label>
+                                        <input type="text" name="name" placeholder="Nhập số điện thoại" value="0901 820 235">
                                     </li>
                                     <li>
-                                        <label>Confirm password</label>
-                                        <input type="text" name="name" placeholder="Confirm password">
+                                      <label>Địa Chỉ</label>
+                                      <input type="text" name="name" placeholder="Nhập địa chỉ" value="71/46 Hoàng Văn Thái, Thanh Xuân, Hà Nội">
                                     </li>
                                 </ul>
-                                <ul class="pro-submit">
-                                    <li>
-                                        <input type="checkbox" name="name">
-                                        <label>Subscribe me to newsletter</label>
-                                    </li>
-                                    <li>
-                                        <a href="profile.html" class="btn btn-style1">Update profile</a>
-                                    </li>
-                                </ul>
+                                <br>
+                            </form>
+                            <form>
+                              <h4>Đổi Mật Khẩu</h4>
+                              <ul class="pro-input-label">
+                                <li>
+                                  <div class="container-pw">
+                                    <label>Mật Khẩu Hiện Tại</label>
+                                    <input type="password" name="password" id="ipnPassword" placeholder="Nhập mật khẩu hiện tại">
+                                    <span id="btnPassword">
+                                      <i class="fas fa-eye"></i>
+                                    </span>
+                                  </div>
+                                </li>
+                              </ul>
+                              <ul class="pro-input-label">
+                                <li>
+                                  <div class="container-pw">
+                                    <label>Mật Khẩu Mới</label>
+                                    <input type="password" name="newPassword" id="ipnPassword" placeholder="Nhập mật khẩu mới">
+                                    <span  id="btnPassword"><i class="fas fa-eye"></i></span>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="container-pw">
+                                    <label>Nhập Lại Mật Khẩu Mới</label>
+                                    <input type="password" name="reNewPassword" id="ipnPassword" placeholder="Nhập lại mật khẩu mới">
+                                    <span class="show-btn" id="btnPassword"><i class="fas fa-eye"></i></span>
+                                  </div>
+                                </li>
+                              </ul>
+                              <ul class="pro-submit">
+                                <li>
+                                  <a href="profile.html" class="btn btn-style1">Cập Nhật</a>
+                                </li>
+                              </ul>
                             </form>
                         </div>
                     </div>

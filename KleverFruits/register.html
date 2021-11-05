@@ -36,6 +36,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <link rel="stylesheet" type="text/css" href="css/mycss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body class="home-1">
     <!-- top notificationbar start -->
@@ -113,7 +114,7 @@
                                             <span class="wishlist-icon"><i>
                                               <img src="../KleverFruits/image/chat-icon.jpg" alt="" class="icon-chat">
                                             </i></span>
-                                            <span class="wishlist-counter">0</span>
+                                            <!-- <span class="wishlist-counter">0</span> -->
                                         </a>
                                     </li>
                                     <li class="side-wrap cart-wrap">
@@ -602,10 +603,19 @@
                               <h6>Tên Đăng Nhập</h6>
                               <input type="text" name="username" placeholder="Tên Đăng Nhập"><br><br>
                               <h6>Mật Khẩu</h6>
-                              <input type="text" name="password" placeholder="Mật Khẩu"><br><br>
+                              <div class="container-pw">
+                                <input type="password" name="password" id="ipnPassword" placeholder="Mật Khẩu">
+                                <span id="btnPassword">
+                                  <i class="fas fa-eye"></i>
+                                </span>
+                              </div><br>
                               <h6>Nhập Lại Mật Khẩu</h6>
-                              <input type="text" name="re-password" placeholder="Nhập  Lại Mật Khẩu"><br><br>
-                              <br><br>
+                              <div class="container-pw">
+                                <input type="password" name="rePassword" id="ipnPassword" placeholder="Nhập Lại Mật Khẩu">
+                                <span id="btnPassword">
+                                  <i class="fas fa-eye"></i>
+                                </span>
+                              </div><br>
                               <a href="account.html" class="btn-style1">Đăng kí</a>
                               <br><br>
                               <p>Bạn đã có tài khoản?</p>
@@ -946,6 +956,8 @@
     <script src="js/swiper.min.js"></script>
     <!-- custom -->
     <script src="js/custom.js"></script>
+    <!-- my js -->
+    <script src="js/myjs.js"></script>
 </body>
 
 <!-- Mirrored from spacingtech.com/html/vegist-final/vegist/register.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 23 Oct 2021 17:04:37 GMT -->

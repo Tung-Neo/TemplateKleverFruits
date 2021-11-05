@@ -37,6 +37,7 @@
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
 
     <link rel="stylesheet" type="text/css" href="css/mycss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body class="home-1">
     <!-- top notificationbar start -->
@@ -114,10 +115,10 @@
                                             <span class="wishlist-icon"><i>
                                               <img src="../KleverFruits/image/chat-icon.jpg" alt="" class="icon-chat">
                                             </i></span>
-                                            <span class="wishlist-counter">0</span>
+                                            <!-- <span class="wishlist-counter">0</span> -->
                                         </a>
                                     </li>
-                                    <li class="side-wrap cart-wrap">
+                                    <!-- <li class="side-wrap cart-wrap">
                                         <div class="shopping-widget">
                                             <div class="shopping-cart">
                                                 <a href="javascript:void(0)" class="cart-count">
@@ -128,7 +129,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                    </li>
+                                    </li> -->
                                     <li class="side-wrap user-wrap">
                                         <div class="acc-desk">
                                             <div class="user-icon">
@@ -183,10 +184,6 @@
                                                             </span>
                                                             <i class="fa fa-angle-down"></i>
                                                         </a>
-                                                        <!-- <a href="#collapse-mega-menu" data-bs-toggle="collapse" class="link-title link-title-lg">
-                                                            <span class="sp-link-title">Sản Phẩm</span>
-                                                            <i class="fa fa-angle-down"></i>
-                                                        </a> -->
                                                         <ul class="dropdown-submenu mega-menu collapse" id="collapse-mega-menu">
                                                             <li class="megamenu-li parent">
                                                                 <h2 class="sublink-title">#Tiêu đề sản phẩm 1</h2>
@@ -250,30 +247,6 @@
                                                             </li>
                                                         </ul>
                                                     </li>
-                                                    <!-- <li class="menu-link parent">
-                                                        <a href="grid-list.html" class="link-title">
-                                                            <span class="sp-link-title">Collection</span>
-                                                            <i class="fa fa-angle-down"></i>
-                                                        </a>
-                                                        <a href="#collapse-banner-menu" data-bs-toggle="collapse" class="link-title link-title-lg">
-                                                            <span class="sp-link-title">Collection</span>
-                                                            <i class="fa fa-angle-down"></i>
-                                                        </a>
-                                                        <ul class="dropdown-submenu banner-menu collapse" id="collapse-banner-menu">
-                                                            <li class="menu-banner">
-                                                                <a href="grid-list.html" class="menu-banner-img"><img src="image/menu-banner01.jpg" alt="menu-image" class="img-fluid"></a>
-                                                                <a href="grid-list.html" class="menu-banner-title"><span>Bestseller</span></a>
-                                                            </li>
-                                                            <li class="menu-banner">
-                                                                <a href="grid-list.html" class="menu-banner-img"><img src="image/menu-banner02.jpg" alt="menu-image" class="img-fluid"></a>
-                                                                <a href="grid-list.html" class="menu-banner-title"><span>Special product</span></a>
-                                                            </li>
-                                                            <li class="menu-banner">
-                                                                <a href="grid-list.html" class="menu-banner-img"><img src="image/menu-banner03.jpg" alt="mneu image" class="img-fluid"></a>
-                                                                <a href="grid-list.html" class="menu-banner-title"><span>Featured product</span></a>
-                                                            </li>
-                                                        </ul>
-                                                    </li> -->
                                                     <li class="menu-link parent">
                                                         <a href="grid-list.html" class="link-title">
                                                             <span class="sp-link-title">Khuyến Mại<span class="hot">Sale</span></span>
@@ -582,18 +555,6 @@
     <!-- breadcrumb start -->
     <section class="about-breadcrumb">
         <div class="about-back section-tb-padding" style="background-image: url(image/about-image.jpg)">
-            <!-- <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="about-l">
-                            <ul class="about-link">
-                                <li class="go-home"><a href="index1.html">Home</a></li>
-                                <li class="about-p"><span>About us</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </section>
     <!-- breadcrumb end -->
@@ -609,7 +570,12 @@
                                 <h6>Tên đăng nhập</h6>
                                 <input type="text" name="username" placeholder="Tên đăng nhập"><br><br>
                                 <h6>Mật khẩu</h6>
-                                <input type="text" name="password" placeholder="Mật khẩu">
+                                <div class="container-pw">
+                                  <input type="password" name="password" id="ipnPassword" placeholder="Nhập mật khẩu hiện tại">
+                                  <span id="btnPassword">
+                                    <i class="fas fa-eye"></i>
+                                  </span>
+                                </div>
                                 <div class="btn-checkbox-login1">
                                   <input type="checkbox" id="checkbox-auto" value="" style="display: none;">
                                   <label for="checkbox-auto">
@@ -956,6 +922,8 @@
     <script src="js/swiper.min.js"></script>
     <!-- custom -->
     <script src="js/custom.js"></script>
+    <!-- my js -->
+    <script src="js/myjs.js"></script>
 </body>
 
 <!-- Mirrored from spacingtech.com/html/vegist-final/vegist/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 23 Oct 2021 17:04:38 GMT -->
