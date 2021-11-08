@@ -2997,10 +2997,10 @@ iphone css
     .all-filter .vendor-filter ul.all-vendor.collapse:not(.show){
         display: none;
     }
+    .all-filter .filter-tag ul.all-tag,
     .all-filter .categories-page-filter ul.all-option,
     .all-filter .price-filter ul.all-price,
     .all-filter .pro-size ul.all-size,
-    .all-filter .filter-tag ul.all-tag,
     .all-filter .vendor-filter ul.all-vendor {
         margin-bottom: 28px;
     }
