@@ -104,3 +104,8 @@
  .container-pw span i.hide-btn::before{
    content: "f070";
  }
+
+.img-product-banner{
+  height: 300px;
+  width: 300px;
+}

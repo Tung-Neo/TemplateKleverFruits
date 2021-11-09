@@ -606,8 +606,8 @@
                         <div class="col">
                             <div class="about-l">
                                 <ul class="about-link">
-                                    <li class="go-home"><a href="index1.html">Home</a></li>
-                                    <li class="about-p"><span>Your checkout</span></li>
+                                    <li class="go-home"><a href="index1.html">Trang Chủ</a></li>
+                                    <li class="about-p"><span>Thanh toán</span></li>
                                 </ul>
                             </div>
                         </div>
@@ -624,101 +624,41 @@
                         <div class="checkout-area">
                             <div class="billing-area">
                                 <form>
-                                    <h2>Billing details</h2>
+                                    <h2>Thông tin thanh toán</h2>
                                     <div class="billing-form">
                                         <ul class="billing-ul input-2">
                                             <li class="billing-li">
-                                                <label>First name</label>
-                                                <input type="text" name="f-name" placeholder="First name">
+                                                <label>Họ và Tên</label>
+                                                <input type="text" name="f-name" placeholder="Nhập họ và tên">
                                             </li>
                                             <li class="billing-li">
-                                                <label>Last name</label>
-                                                <input type="text" name="l-name" placeholder="Last name">
-                                            </li>
-                                        </ul>
-                                        <ul class="billing-ul">
-                                            <li class="billing-li">
-                                                <label>Company name (Optional)</label>
-                                                <input type="text" name="company details" placeholder="Company name">
+                                                <label>Số điện thoại</label>
+                                                <input type="text" name="company details" placeholder="Nhập số điện thoại">
                                             </li>
                                         </ul>
                                         <ul class="billing-ul">
                                             <li class="billing-li">
-                                                <label>Country</label>
-                                                <select>
-                                                    <option>Select a country</option>
-                                                    <option>United country</option>
-                                                    <option>Russia</option>
-                                                    <option>italy</option>
-                                                    <option>France</option>
-                                                    <option>Ukraine</option>
-                                                    <option>Germany</option>
-                                                    <option>Australia</option>
-                                                </select>
-                                            </li>
-                                        </ul>
-                                        <ul class="billing-ul">
-                                            <li class="billing-li">
-                                                <label>Street address</label>
-                                                <input type="text" name="address" placeholder="Street address">
-                                            </li>
-                                        </ul>
-                                        <ul class="billing-ul">
-                                            <li class="billing-li">
-                                                <label>Apartment,suite,unit etc. (Optional)</label>
-                                                <input type="text" name="--" placeholder="">
-                                            </li>
-                                        </ul>
-                                        <ul class="billing-ul">
-                                            <li class="billing-li">
-                                                <label>Town / City</label>
-                                                <input type="text" name="city" placeholder="">
-                                            </li>
-                                        </ul>
-                                        <ul class="billing-ul">
-                                            <li class="billing-li">
-                                                <label>State / Country</label>
-                                                <input type="text" name="--" placeholder="">
-                                            </li>
-                                        </ul>
-                                        <ul class="billing-ul">
-                                            <li class="billing-li">
-                                                <label>Postcode / ZIP</label>
-                                                <input type="text" name="--" placeholder="">
-                                            </li>
-                                        </ul>
-                                        <ul class="billing-ul input-2">
-                                            <li class="billing-li">
-                                                <label>Email address</label>
-                                                <input type="text" name="mail" placeholder="Email address">
-                                            </li>
-                                            <li class="billing-li">
-                                                <label>Phone</label>
-                                                <input type="text" name="phone" placeholder="Phone">
+                                                <label>Địa chỉ</label>
+                                                <input type="text" name="address" placeholder="Nhập địa chỉ của bạn">
                                             </li>
                                         </ul>
                                     </div>
                                 </form>
                                 <div class="billing-details">
                                     <form>
-                                        <h2>Shipping details</h2>
+                                        <h2>Ghi Chú</h2>
                                         <ul class="shipping-form">
-                                            <li class="check-box">
-                                                <input type="checkbox" name="--">
-                                                <label>Ship to a different address?</label>
-                                            </li>
                                             <li class="comment-area">
-                                                <label>Order notes(Optional)</label>
+                                                <label>Ghi chú cho cửa hàng</label>
                                                 <textarea name="comments" rows="4" cols="80"></textarea>
                                             </li>
                                         </ul>
-
                                     </form>
                                 </div>
                             </div>
                             <div class="order-area">
-                                <div class="check-pro">
-                                    <h2>In your cart (2)</h2>
+                                <!-- <div class="check-pro">
+                                    <h2>Giỏ Hàng Của Bạn (2)</h2>
                                     <ul class="check-ul">
                                         <li>
                                             <div class="check-pro-img">
@@ -741,12 +681,12 @@
                                             </div>
                                         </li>
                                     </ul>
-                                </div>
-                                <h2>Your order</h2>
+                                </div> -->
+                                <h2>Đơn Hàng Của Bạn</h2>
                                 <ul class="order-history">
                                     <li class="order-details">
-                                        <span>Product:</span>
-                                        <span>Total</span>
+                                        <span><b>Sản Phẩm:</b></span>
+                                        <span><b>Tổng</b></span>
                                     </li>
                                     <li class="order-details">
                                         <span>Orange juice:</span>
@@ -757,31 +697,31 @@
                                         <span>$230.00</span>
                                     </li>
                                     <li class="order-details">
-                                        <span>Subtotal:</span>
+                                        <span><b>Tổng Tiền:</b></span>
                                         <span>$323.00</span>
                                     </li>
                                     <li class="order-details">
-                                        <span>Shipping Charge:</span>
-                                        <span>Free shipping</span>
+                                        <span><b>Phí Giao Hàng:</b></span>
+                                        <span>0</span>
+                                    </li><br>
+                                    <li>
+                                      <input type="text" class="col-6" placeholder="Nhập voncher của bạn" value="NEWMEMBER">
+                                      <span style="float: right;">-$50.00</span>
                                     </li>
                                     <li class="order-details">
-                                        <span>Total:</span>
-                                        <span>$323.00</span>
+                                        <span>Thành Tiền:</span>
+                                        <span>$283.00</span>
                                     </li>
                                 </ul>
                                 <form>
                                     <ul class="order-form">
                                         <li>
-                                            <input type="checkbox" name="--">
-                                            <label>Direct bank transfer</label>
+                                            <input type="radio" name="--">
+                                            <label>Chuyển khoản</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" name="--">
-                                            <label>Cheque payment</label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" name="--">
-                                            <label>Paypal</label>
+                                            <input type="radio" name="--">
+                                            <label>Thanh toán khi nhận hàng</label>
                                         </li>
                                         <li class="pay-icon">
                                             <a href="javascript:void(0)"><i class="fa fa-credit-card"></i></a>
@@ -792,7 +732,7 @@
                                     </ul>
                                 </form>
                                 <div class="checkout-btn">
-                                    <a href="javascript:void(0)" class="btn-style1">Place order</a>
+                                    <a href="javascript:void(0)" class="btn-style1">Đặt Hàng</a>
                                 </div>
                             </div>
                         </div>

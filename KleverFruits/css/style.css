@@ -3287,8 +3287,7 @@ a.scroll:hover span{
     text-align: center;
 }
 .forgat-password-area .forgot-p a.forgot-link span{
-    background-color: #000;
-    border: 2px solid #000;
+    color: #000;
     padding: 8px 10px;
     -webkit-transition: all 0.3s ease-in-out 0s;
     -o-transition: all 0.3s ease-in-out 0s;
@@ -3299,6 +3298,7 @@ a.scroll:hover span{
     margin-left: 3px;
 }
 .forgat-password-area .forgot-p a.forgot-link span:hover{
+    color: #ffffff;
     background-color: transparent;
     -webkit-transition: all 0.3s ease-in-out 0s;
     -o-transition: all 0.3s ease-in-out 0s;
@@ -6309,14 +6309,18 @@ a.scroll:hover span{
     color: #f5ab1e;
     text-decoration: underline;
 }
-.pro-page-content .pro-page-tab .tab-content .tab-pane .customer-reviews h4.review-head{
+/* .pro-page-content .pro-page-tab .tab-content .tab-pane .customer-reviews span.review-head{
     font-size: 16px;
     margin-top: 10px;
     margin-bottom: 10px;
     line-height: 1;
-}
+} */
 .pro-page-content .pro-page-tab .tab-content .tab-pane .customer-reviews span.reviews-editor{
     font-weight: 500;
+    /* font-size: 16px; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1;
 }
 .pro-page-content .pro-page-tab .tab-content .tab-pane .customer-reviews span.reviews-editor span.review-name{
     font-weight: normal;
